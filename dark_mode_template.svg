@@ -1,0 +1,65 @@
+<svg width="1160" height="578" viewBox="0 0 1160 578" xmlns="http://www.w3.org/2000/svg">
+<style>
+.avatar { font-family: "Courier New", monospace; font-size: 6.4px; fill: #7aa2f7; white-space: pre; }
+.header { font-family: "Consolas", "Monaco", monospace; font-size: 14px; font-weight: 700; fill: #c0caf5; }
+.section { font-family: "Consolas", "Monaco", monospace; font-size: 14px; font-weight: 700; fill: #414868; }
+.label { font-family: "Consolas", "Monaco", monospace; font-size: 14px; fill: #9d7cd8; }
+.value { font-family: "Consolas", "Monaco", monospace; font-size: 14px; fill: #c0caf5; }
+</style>
+<rect x="0.5" y="0.5" rx="10" width="1159" height="577" fill="#1a1b26" stroke="#292e42" stroke-width="1"/>
+<text x="20" y="30" class="avatar" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@@@@@GYYYYYYYYYYY5&amp;@@@@@@@@@@@@@@@@@@@@&amp;5YYYYYYYYYYYG@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
+<text x="20" y="37.36" class="avatar" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@@@@@!            B@@@@@@@@@@@@@@@@@@@@B            ~@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
+<text x="20" y="44.72" class="avatar" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@@@@@!            B@@@@@@@@@@@@@@@@@@@@B            ~@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
+<text x="20" y="52.08" class="avatar" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@@@@@!      ?P555P&amp;@@@@@@@@@@@@@@@@@@@@@P555PJ      ~@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
+<text x="20" y="59.44" class="avatar" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@@@@@!      G@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@G      ~@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
+<text x="20" y="66.8" class="avatar" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@@@@@!      P@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@G      ~@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
+<text x="20" y="74.16" class="avatar" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@@@@@!      P@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@G      ~@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
+<text x="20" y="81.52" class="avatar" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@@@@@!      P@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@G      ~@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
+<text x="20" y="88.88" class="avatar" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@@@@@!      G@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@G      ~@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
+<text x="20" y="96.24" class="avatar" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@@@@@!      ?PPP5P&amp;@@@@@@@@@@@@@@@@@@@@&amp;P5PPPJ      ~@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
+<text x="20" y="103.6" class="avatar" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@@@@@!            G@@@@@@@@@@@@@@@@@@@@G            ~@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
+<text x="20" y="110.96" class="avatar" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@@@@@!            G@@@@@@@@@@@@@@@@@@@@G            ~@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
+<text x="20" y="118.32" class="avatar" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@@@@@GJJJJJJJJJJJY&amp;@@@@@@@@@@@@@@@@@@@@&amp;YJJJJJJJJJJJP@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
+<line x1="435" y1="20" x2="435" y2="558" stroke="#414868" stroke-width="1"/>
+<text x="460" y="30" class="header">CaffeinatedR4t ──────────────────</text>
+<text x="470" y="52" class="label">OS:</text>
+<text x="720" y="52" class="value">EDIT_ME (e.g. Windows 11, macOS)</text>
+<text x="470" y="74" class="label">Uptime:</text>
+<text x="720" y="74" class="value">EDIT_ME (e.g. how long you&#x27;ve coded)</text>
+<text x="470" y="96" class="label">Host:</text>
+<text x="720" y="96" class="value">EDIT_ME (e.g. your company/school)</text>
+<text x="470" y="118" class="label">Kernel:</text>
+<text x="720" y="118" class="value">EDIT_ME (e.g. your role/field)</text>
+<text x="470" y="140" class="label">IDE:</text>
+<text x="720" y="140" class="value">EDIT_ME (e.g. VSCode, JetBrains)</text>
+<text x="470" y="184" class="label">Languages.Programming:</text>
+<text x="720" y="184" class="value">EDIT_ME (e.g. Python, JavaScript)</text>
+<text x="470" y="206" class="label">Languages.Computer:</text>
+<text x="720" y="206" class="value">EDIT_ME (e.g. HTML, CSS, JSON)</text>
+<text x="470" y="228" class="label">Languages.Real:</text>
+<text x="720" y="228" class="value">EDIT_ME (e.g. English)</text>
+<text x="470" y="272" class="label">Hobbies.Software:</text>
+<text x="720" y="272" class="value">EDIT_ME (e.g. game dev, modding)</text>
+<text x="470" y="294" class="label">Hobbies.Hardware:</text>
+<text x="720" y="294" class="value">EDIT_ME (e.g. PC building)</text>
+<text x="460" y="338" class="section">- Contact ─────────────────────────────────</text>
+<text x="470" y="360" class="label">Email.Personal:</text>
+<text x="720" y="360" class="value">EDIT_ME</text>
+<text x="470" y="382" class="label">Email.Work:</text>
+<text x="720" y="382" class="value">EDIT_ME</text>
+<text x="470" y="404" class="label">LinkedIn:</text>
+<text x="720" y="404" class="value">EDIT_ME</text>
+<text x="470" y="426" class="label">Discord:</text>
+<text x="720" y="426" class="value">EDIT_ME</text>
+<text x="460" y="470" class="section">- GitHub Stats ──────────────────────────</text>
+<text x="470" y="492" class="label">Repos:</text>
+<text x="720" y="492" class="value">{{ repos }}</text>
+<text x="870" y="492" class="label">Stars:</text>
+<text x="960" y="492" class="value">{{ stars }}</text>
+<text x="470" y="514" class="label">Commits:</text>
+<text x="720" y="514" class="value">{{ commits }}</text>
+<text x="870" y="514" class="label">Followers:</text>
+<text x="960" y="514" class="value">{{ followers }}</text>
+<text x="470" y="536" class="label">Lines of Code:</text>
+<text x="720" y="536" class="value">{{ loc }} ( {{ loc_added }}++, {{ loc_deleted }}-- )</text>
+</svg>
