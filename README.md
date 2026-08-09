@@ -1,6 +1,11 @@
 <div align="center">
 
-[![CaffeinatedR4t's GitHub Card](https://raw.githubusercontent.com/CaffeinatedR4t/CaffeinatedR4t/master/dark_mode.svg#gh-dark-mode-only)](https://github.com/CaffeinatedR4t)
-[![CaffeinatedR4t's GitHub Card](https://raw.githubusercontent.com/CaffeinatedR4t/CaffeinatedR4t/master/light_mode.svg#gh-light-mode-only)](https://github.com/CaffeinatedR4t)
+<a href="https://github.com/CaffeinatedR4t">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/CaffeinatedR4t/CaffeinatedR4t/master/dark_mode.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/CaffeinatedR4t/CaffeinatedR4t/master/light_mode.svg">
+    <img alt="CaffeinatedR4t's GitHub Card" src="https://raw.githubusercontent.com/CaffeinatedR4t/CaffeinatedR4t/master/dark_mode.svg">
+  </picture>
+</a>
 
 </div>
