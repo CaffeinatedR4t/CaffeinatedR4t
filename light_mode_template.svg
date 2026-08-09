@@ -83,7 +83,7 @@
 <text x="470" y="404" class="label">LinkedIn:</text>
 <text x="720" y="404" class="value">linkedin.com/in/jeremyjosephpohar</text>
 <text x="470" y="426" class="label">Instagram:</text>
-<text x="720" y="426" class="value">@jeremyjosephpohar</text>
+<text x="720" y="426" class="value">@jeremyjpohar</text>
 <text x="460" y="470" class="section">- GitHub Stats ──────────────────────────</text>
 <text x="470" y="492" class="label">Repos:</text>
 <text x="720" y="492" class="value">{{ repos }}</text>
