@@ -22,13 +22,11 @@
 <text x="40" y="326.0" class="avatar" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@@@@@!      P@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@G      ~@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
 <text x="40" y="348.0" class="avatar" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@@@@@!      P@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@G      ~@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
 <text x="40" y="370.0" class="avatar" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@@@@@!      P@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@G      ~@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
-<text x="40" y="392.0" class="avatar" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@@@@@!      P@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@G      ~@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
-<text x="40" y="414.0" class="avatar" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@@@@@!      P@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@G      ~@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
-<text x="40" y="436.0" class="avatar" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@@@@@!      G@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@G      ~@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
-<text x="40" y="458.0" class="avatar" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@@@@@!      ?PPP5P&amp;@@@@@@@@@@@@@@@@@@@@&amp;P5PPPJ      ~@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
-<text x="40" y="480.0" class="avatar" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@@@@@!            G@@@@@@@@@@@@@@@@@@@@G            ~@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
-<text x="40" y="502.0" class="avatar" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@@@@@!            G@@@@@@@@@@@@@@@@@@@@G            ~@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
-<text x="40" y="524.0" class="avatar" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@@@@@GJJJJJJJJJJJY&amp;@@@@@@@@@@@@@@@@@@@@&amp;YJJJJJJJJJJJP@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
+<text x="40" y="392.0" class="avatar" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@@@@@!      G@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@G      ~@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
+<text x="40" y="414.0" class="avatar" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@@@@@!      ?PPP5P&amp;@@@@@@@@@@@@@@@@@@@@&amp;P5PPPJ      ~@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
+<text x="40" y="436.0" class="avatar" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@@@@@!            G@@@@@@@@@@@@@@@@@@@@G            ~@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
+<text x="40" y="458.0" class="avatar" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@@@@@!            G@@@@@@@@@@@@@@@@@@@@G            ~@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
+<text x="40" y="480.0" class="avatar" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@@@@@GJJJJJJJJJJJY&amp;@@@@@@@@@@@@@@@@@@@@&amp;YJJJJJJJJJJJP@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
 <text x="520" y="40" class="header">jeremy@pohar</text>
 <line x1="625.3" y1="36" x2="1130" y2="36" stroke="#474d55" stroke-width="1" stroke-dasharray="4, 4"/>
 <text x="520" y="62" class="label">. OS:</text>
@@ -46,47 +44,47 @@
 <text x="520" y="150" class="label">. IDE:</text>
 <line x1="576.7" y1="146" x2="943.7" y2="146" stroke="#474d55" stroke-width="2" stroke-dasharray="2, 6"/>
 <text x="1130" y="150" class="value" text-anchor="end">VSCode, Android Studio</text>
-<text x="520" y="180" class="label">. Languages.Programming:</text>
-<line x1="722.5" y1="176" x2="822.2" y2="176" stroke="#474d55" stroke-width="2" stroke-dasharray="2, 6"/>
-<text x="1130" y="180" class="value" text-anchor="end">Python, JS, TS, Kotlin, Java, PHP, C#</text>
-<text x="520" y="202" class="label">. Languages.Computer:</text>
-<line x1="698.2" y1="198" x2="1008.5" y2="198" stroke="#474d55" stroke-width="2" stroke-dasharray="2, 6"/>
-<text x="1130" y="202" class="value" text-anchor="end">SQL, HTML, CSS</text>
-<text x="520" y="224" class="label">. Languages.Real:</text>
-<line x1="665.8" y1="220" x2="968.0" y2="220" stroke="#474d55" stroke-width="2" stroke-dasharray="2, 6"/>
-<text x="1130" y="224" class="value" text-anchor="end">English, Indonesian</text>
-<text x="520" y="254" class="label">. Hobbies.Tech:</text>
-<line x1="649.6" y1="250" x2="822.2" y2="250" stroke="#474d55" stroke-width="2" stroke-dasharray="2, 6"/>
-<text x="1130" y="254" class="value" text-anchor="end">Cybersecurity, PC Building, Keyboards</text>
-<text x="520" y="276" class="label">. Hobbies.Personal:</text>
-<line x1="682.0" y1="272" x2="927.5" y2="272" stroke="#474d55" stroke-width="2" stroke-dasharray="2, 6"/>
-<text x="1130" y="276" class="value" text-anchor="end">Boxing, Movies, Learning</text>
-<text x="520" y="306" class="header">- Contact</text>
-<line x1="601.0" y1="302" x2="1130" y2="302" stroke="#474d55" stroke-width="1" stroke-dasharray="4, 4"/>
-<text x="520" y="328" class="label">. Email:</text>
-<line x1="592.9" y1="324" x2="943.7" y2="324" stroke="#474d55" stroke-width="2" stroke-dasharray="2, 6"/>
-<text x="1130" y="328" class="value" text-anchor="end">jeremy.yosep@gmail.com</text>
-<text x="520" y="350" class="label">. LinkedIn:</text>
-<line x1="617.2" y1="346" x2="854.6" y2="346" stroke="#474d55" stroke-width="2" stroke-dasharray="2, 6"/>
-<text x="1130" y="350" class="value" text-anchor="end">linkedin.com/in/jeremyjosephpohar</text>
-<text x="520" y="372" class="label">. Instagram:</text>
-<line x1="625.3" y1="368" x2="1016.6" y2="368" stroke="#474d55" stroke-width="2" stroke-dasharray="2, 6"/>
-<text x="1130" y="372" class="value" text-anchor="end">@jeremyjpohar</text>
-<text x="520" y="402" class="header">- GitHub Stats</text>
-<line x1="641.5" y1="398" x2="1130" y2="398" stroke="#474d55" stroke-width="1" stroke-dasharray="4, 4"/>
-<text x="520" y="424" class="label">. Repos:</text>
-<line x1="592.9" y1="420" x2="1105.7" y2="420" stroke="#474d55" stroke-width="2" stroke-dasharray="2, 6"/>
-<text x="1130" y="424" class="value" text-anchor="end">41</text>
-<text x="520" y="446" class="label">. Stars:</text>
-<line x1="592.9" y1="442" x2="1113.8" y2="442" stroke="#474d55" stroke-width="2" stroke-dasharray="2, 6"/>
-<text x="1130" y="446" class="value" text-anchor="end">0</text>
-<text x="520" y="468" class="label">. Commits:</text>
-<line x1="609.1" y1="464" x2="1097.6" y2="464" stroke="#474d55" stroke-width="2" stroke-dasharray="2, 6"/>
-<text x="1130" y="468" class="value" text-anchor="end">443</text>
-<text x="520" y="490" class="label">. Followers:</text>
-<line x1="625.3" y1="486" x2="1113.8" y2="486" stroke="#474d55" stroke-width="2" stroke-dasharray="2, 6"/>
-<text x="1130" y="490" class="value" text-anchor="end">2</text>
-<text x="520" y="512" class="label">. Lines of Code:</text>
-<line x1="657.7" y1="508" x2="870.8" y2="508" stroke="#474d55" stroke-width="2" stroke-dasharray="2, 6"/>
-<text x="1130" y="512" class="value" text-anchor="end">361,241 ( 382,194++, 20,953-- )</text>
+<text x="520" y="172" class="label">. Languages.Programming:</text>
+<line x1="722.5" y1="168" x2="822.2" y2="168" stroke="#474d55" stroke-width="2" stroke-dasharray="2, 6"/>
+<text x="1130" y="172" class="value" text-anchor="end">Python, JS, TS, Kotlin, Java, PHP, C#</text>
+<text x="520" y="194" class="label">. Languages.Computer:</text>
+<line x1="698.2" y1="190" x2="1008.5" y2="190" stroke="#474d55" stroke-width="2" stroke-dasharray="2, 6"/>
+<text x="1130" y="194" class="value" text-anchor="end">SQL, HTML, CSS</text>
+<text x="520" y="216" class="label">. Languages.Real:</text>
+<line x1="665.8" y1="212" x2="968.0" y2="212" stroke="#474d55" stroke-width="2" stroke-dasharray="2, 6"/>
+<text x="1130" y="216" class="value" text-anchor="end">English, Indonesian</text>
+<text x="520" y="238" class="label">. Hobbies.Tech:</text>
+<line x1="649.6" y1="234" x2="822.2" y2="234" stroke="#474d55" stroke-width="2" stroke-dasharray="2, 6"/>
+<text x="1130" y="238" class="value" text-anchor="end">Cybersecurity, PC Building, Keyboards</text>
+<text x="520" y="260" class="label">. Hobbies.Personal:</text>
+<line x1="682.0" y1="256" x2="927.5" y2="256" stroke="#474d55" stroke-width="2" stroke-dasharray="2, 6"/>
+<text x="1130" y="260" class="value" text-anchor="end">Boxing, Movies, Learning</text>
+<text x="520" y="282" class="header">- Contact</text>
+<line x1="601.0" y1="278" x2="1130" y2="278" stroke="#474d55" stroke-width="1" stroke-dasharray="4, 4"/>
+<text x="520" y="304" class="label">. Email:</text>
+<line x1="592.9" y1="300" x2="943.7" y2="300" stroke="#474d55" stroke-width="2" stroke-dasharray="2, 6"/>
+<text x="1130" y="304" class="value" text-anchor="end">jeremy.yosep@gmail.com</text>
+<text x="520" y="326" class="label">. LinkedIn:</text>
+<line x1="617.2" y1="322" x2="854.6" y2="322" stroke="#474d55" stroke-width="2" stroke-dasharray="2, 6"/>
+<text x="1130" y="326" class="value" text-anchor="end">linkedin.com/in/jeremyjosephpohar</text>
+<text x="520" y="348" class="label">. Instagram:</text>
+<line x1="625.3" y1="344" x2="1016.6" y2="344" stroke="#474d55" stroke-width="2" stroke-dasharray="2, 6"/>
+<text x="1130" y="348" class="value" text-anchor="end">@jeremyjpohar</text>
+<text x="520" y="370" class="header">- GitHub Stats</text>
+<line x1="641.5" y1="366" x2="1130" y2="366" stroke="#474d55" stroke-width="1" stroke-dasharray="4, 4"/>
+<text x="520" y="392" class="label">. Repos:</text>
+<line x1="592.9" y1="388" x2="1105.7" y2="388" stroke="#474d55" stroke-width="2" stroke-dasharray="2, 6"/>
+<text x="1130" y="392" class="value" text-anchor="end">41</text>
+<text x="520" y="414" class="label">. Stars:</text>
+<line x1="592.9" y1="410" x2="1113.8" y2="410" stroke="#474d55" stroke-width="2" stroke-dasharray="2, 6"/>
+<text x="1130" y="414" class="value" text-anchor="end">0</text>
+<text x="520" y="436" class="label">. Commits:</text>
+<line x1="609.1" y1="432" x2="1097.6" y2="432" stroke="#474d55" stroke-width="2" stroke-dasharray="2, 6"/>
+<text x="1130" y="436" class="value" text-anchor="end">444</text>
+<text x="520" y="458" class="label">. Followers:</text>
+<line x1="625.3" y1="454" x2="1113.8" y2="454" stroke="#474d55" stroke-width="2" stroke-dasharray="2, 6"/>
+<text x="1130" y="458" class="value" text-anchor="end">2</text>
+<text x="520" y="480" class="label">. Lines of Code:</text>
+<line x1="657.7" y1="476" x2="870.8" y2="476" stroke="#474d55" stroke-width="2" stroke-dasharray="2, 6"/>
+<text x="1130" y="480" class="value" text-anchor="end">361,241 ( 382,194++, 20,953-- )</text>
 </svg>
