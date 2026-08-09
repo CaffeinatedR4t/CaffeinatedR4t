@@ -1,29 +1,20 @@
 #!/usr/bin/env python3
-"""
-today.py
-Pulls live stats from the GitHub API (repos, stars, followers, total
-commits, and total lines of code contributed) and stamps them into
-light_mode.svg / dark_mode.svg for use in a GitHub profile README.
-
-Requires an environment variable ACCESS_TOKEN with a GitHub Personal
-Access Token that has at least `read:user` and `repo` scope.
-"""
-
 import os
 import json
 import requests
 from pathlib import Path
 
 USERNAME = os.environ.get("GITHUB_USERNAME", "CaffeinatedR4t")
-ACCESS_TOKEN = os.environ["ACCESS_TOKEN"]
+ACCESS_TOKEN = os.environ.get("ACCESS_TOKEN", "")
 
-HEADERS = {"Authorization": f"bearer {ACCESS_TOKEN}"}
+HEADERS = {"Authorization": f"bearer {ACCESS_TOKEN}"} if ACCESS_TOKEN else {}
 GRAPHQL_URL = "https://api.github.com/graphql"
 CACHE_DIR = Path(__file__).parent / "cache"
 CACHE_DIR.mkdir(exist_ok=True)
 
-
 def graphql_query(query, variables=None):
+    if not ACCESS_TOKEN:
+        return {"user": {"name": USERNAME, "followers": {"totalCount": 0}, "repositories": {"totalCount": 0, "pageInfo": {"hasNextPage": False}, "nodes": []}, "contributionsCollection": {"totalCommitContributions": 0, "restrictedContributionsCount": 0}}}
     resp = requests.post(
         GRAPHQL_URL,
         json={"query": query, "variables": variables or {}},
@@ -38,7 +29,6 @@ def graphql_query(query, variables=None):
 
 
 def get_profile_stats():
-    """Followers, public repo count, and total stars across owned repos."""
     query = """
     query($login: String!, $after: String) {
       user(login: $login) {
@@ -77,11 +67,6 @@ def get_profile_stats():
 
 
 def get_total_commits():
-    """
-    contributionsCollection only covers one year at a time, so walk back
-    year by year from account creation until totalCommitContributions is 0
-    two years running (cheap heuristic that avoids over-querying).
-    """
     query = """
     query($login: String!, $from: DateTime!, $to: DateTime!) {
       user(login: $login) {
@@ -115,14 +100,11 @@ def get_total_commits():
 
 
 def get_lines_of_code():
-    """
-    GitHub's API has no direct 'lines of code' field, so this sums
-    additions/deletions from each owned repo's default branch stats
-    endpoint, caching per-repo results since this is the expensive part.
-    Returns (net_loc, total_added, total_deleted).
-    """
     cache_file = CACHE_DIR / "loc_cache.json"
     cache = json.loads(cache_file.read_text()) if cache_file.exists() else {}
+
+    if not ACCESS_TOKEN:
+        return 0, 0, 0
 
     repos_resp = requests.get(
         f"https://api.github.com/users/{USERNAME}/repos?per_page=100&type=owner",
@@ -175,11 +157,115 @@ def format_number(n):
     return f"{n:,}"
 
 
-def stamp_svg(template_path, output_path, values):
-    text = Path(template_path).read_text()
-    for key, val in values.items():
-        text = text.replace(f"{{{{ {key} }}}}", format_number(val) if isinstance(val, int) else str(val))
-    Path(output_path).write_text(text)
+def generate_svg(mode, values):
+    dark_bg = "#161b22"
+    dark_avatar = "#bec5ce"
+    dark_label = "#ffa657"
+    dark_value = "#a5d6ff"
+    dark_header = "#bec5ce"
+    dark_dots = "#474d55"
+    
+    light_bg = "#f6f8fa"
+    light_avatar = "#24292e"
+    light_label = "#d73a49"
+    light_value = "#0366d6"
+    light_header = "#24292e"
+    light_dots = "#d1d5da"
+    
+    bg = dark_bg if mode == 'dark' else light_bg
+    avatar_color = dark_avatar if mode == 'dark' else light_avatar
+    label_color = dark_label if mode == 'dark' else light_label
+    value_color = dark_value if mode == 'dark' else light_value
+    header_color = dark_header if mode == 'dark' else light_header
+    dots_color = dark_dots if mode == 'dark' else light_dots
+    
+    width = 1160
+    height = 578
+    
+    svg = f'''<svg width="{width}" height="{height}" viewBox="0 0 {width} {height}" xmlns="http://www.w3.org/2000/svg">
+<style>
+.avatar {{ font-family: "Courier New", monospace; font-size: 7.2px; fill: {avatar_color}; white-space: pre; }}
+.header {{ font-family: "Consolas", "Courier New", monospace; font-size: 14px; font-weight: 700; fill: {header_color}; }}
+.label {{ font-family: "Consolas", "Courier New", monospace; font-size: 14px; fill: {label_color}; }}
+.value {{ font-family: "Consolas", "Courier New", monospace; font-size: 14px; fill: {value_color}; }}
+</style>
+<rect x="0.5" y="0.5" rx="10" width="{width-1}" height="{height-1}" fill="{bg}" stroke="{dots_color}" stroke-width="1"/>
+'''
+
+    ascii_art = ['@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@', '@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@', '@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@', '@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@', '@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@', '@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@', '@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@', '@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@', '@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@', '@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@', '@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@', '@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@', '@@@@@@@@@@@@@@@@@@@@@@@@@@GYYYYYYYYYYY5&amp;@@@@@@@@@@@@@@@@@@@@&amp;5YYYYYYYYYYYG@@@@@@@@@@@@@@@@@@@@@@@@@@', '@@@@@@@@@@@@@@@@@@@@@@@@@@!            B@@@@@@@@@@@@@@@@@@@@B            ~@@@@@@@@@@@@@@@@@@@@@@@@@@', '@@@@@@@@@@@@@@@@@@@@@@@@@@!            B@@@@@@@@@@@@@@@@@@@@B            ~@@@@@@@@@@@@@@@@@@@@@@@@@@', '@@@@@@@@@@@@@@@@@@@@@@@@@@!      ?P555P&amp;@@@@@@@@@@@@@@@@@@@@@P555PJ      ~@@@@@@@@@@@@@@@@@@@@@@@@@@', '@@@@@@@@@@@@@@@@@@@@@@@@@@!      G@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@G      ~@@@@@@@@@@@@@@@@@@@@@@@@@@', '@@@@@@@@@@@@@@@@@@@@@@@@@@!      P@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@G      ~@@@@@@@@@@@@@@@@@@@@@@@@@@', '@@@@@@@@@@@@@@@@@@@@@@@@@@!      P@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@G      ~@@@@@@@@@@@@@@@@@@@@@@@@@@', '@@@@@@@@@@@@@@@@@@@@@@@@@@!      P@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@G      ~@@@@@@@@@@@@@@@@@@@@@@@@@@', '@@@@@@@@@@@@@@@@@@@@@@@@@@!      P@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@G      ~@@@@@@@@@@@@@@@@@@@@@@@@@@', '@@@@@@@@@@@@@@@@@@@@@@@@@@!      P@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@G      ~@@@@@@@@@@@@@@@@@@@@@@@@@@', '@@@@@@@@@@@@@@@@@@@@@@@@@@!      P@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@G      ~@@@@@@@@@@@@@@@@@@@@@@@@@@', '@@@@@@@@@@@@@@@@@@@@@@@@@@!      P@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@G      ~@@@@@@@@@@@@@@@@@@@@@@@@@@', '@@@@@@@@@@@@@@@@@@@@@@@@@@!      P@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@G      ~@@@@@@@@@@@@@@@@@@@@@@@@@@', '@@@@@@@@@@@@@@@@@@@@@@@@@@!      P@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@G      ~@@@@@@@@@@@@@@@@@@@@@@@@@@', '@@@@@@@@@@@@@@@@@@@@@@@@@@!      P@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@G      ~@@@@@@@@@@@@@@@@@@@@@@@@@@', '@@@@@@@@@@@@@@@@@@@@@@@@@@!      P@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@G      ~@@@@@@@@@@@@@@@@@@@@@@@@@@', '@@@@@@@@@@@@@@@@@@@@@@@@@@!      P@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@G      ~@@@@@@@@@@@@@@@@@@@@@@@@@@', '@@@@@@@@@@@@@@@@@@@@@@@@@@!      P@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@G      ~@@@@@@@@@@@@@@@@@@@@@@@@@@', '@@@@@@@@@@@@@@@@@@@@@@@@@@!      G@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@G      ~@@@@@@@@@@@@@@@@@@@@@@@@@@', '@@@@@@@@@@@@@@@@@@@@@@@@@@!      ?PPP5P&amp;@@@@@@@@@@@@@@@@@@@@&amp;P5PPPJ      ~@@@@@@@@@@@@@@@@@@@@@@@@@@', '@@@@@@@@@@@@@@@@@@@@@@@@@@!            G@@@@@@@@@@@@@@@@@@@@G            ~@@@@@@@@@@@@@@@@@@@@@@@@@@', '@@@@@@@@@@@@@@@@@@@@@@@@@@!            G@@@@@@@@@@@@@@@@@@@@G            ~@@@@@@@@@@@@@@@@@@@@@@@@@@', '@@@@@@@@@@@@@@@@@@@@@@@@@@GJJJJJJJJJJJY&amp;@@@@@@@@@@@@@@@@@@@@&amp;YJJJJJJJJJJJP@@@@@@@@@@@@@@@@@@@@@@@@@@', '@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@', '@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@', '@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@', '@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@', '@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@', '@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@', '@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@', '@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@', '@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@', '@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@', '@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@', '@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@']
+
+    y = 20
+    for a_line in ascii_art:
+        svg += f'<text x="20" y="{y:.1f}" class="avatar" xml:space="preserve">{a_line}</text>\n'
+        y += 11.2
+
+    char_width = 8.1  # slightly wider than 7.7 to ensure it doesn't overlap text
+    right_col_x = 520
+    max_right_x = 1130
+    
+    y_idx = 40
+    
+    def add_line(label, value=""):
+        nonlocal y_idx
+        lbl_str = f". {label}"
+        svg_chunk = f'<text x="{right_col_x}" y="{y_idx}" class="label">{lbl_str}</text>\n'
+        if value:
+            # calculate exact x coordinates for the dotted line dynamically
+            x1 = right_col_x + (len(lbl_str) + 1) * char_width
+            x2 = max_right_x - (len(value) + 1) * char_width
+            if x2 > x1:
+                svg_chunk += f'<line x1="{x1}" y1="{y_idx-4}" x2="{x2}" y2="{y_idx-4}" stroke="{dots_color}" stroke-width="2" stroke-dasharray="2, 6"/>\n'
+            svg_chunk += f'<text x="{max_right_x}" y="{y_idx}" class="value" text-anchor="end">{value}</text>\n'
+        y_idx += 22
+        return svg_chunk
+        
+    def add_header(title):
+        nonlocal y_idx
+        svg_chunk = f'<text x="{right_col_x}" y="{y_idx}" class="header">{title}</text>\n'
+        x1 = right_col_x + (len(title) + 1) * char_width
+        x2 = max_right_x
+        if x2 > x1:
+            svg_chunk += f'<line x1="{x1}" y1="{y_idx-4}" x2="{x2}" y2="{y_idx-4}" stroke="{dots_color}" stroke-width="1" stroke-dasharray="4, 4"/>\n'
+        y_idx += 22
+        return svg_chunk
+        
+    def add_gap():
+        nonlocal y_idx
+        y_idx += 8
+
+    content = ""
+    content += add_header("jeremy@pohar")
+    content += add_line("OS:", "Windows 10")
+    content += add_line("Uptime:", "4+ Years")
+    content += add_line("Host:", "Creativeans")
+    content += add_line("Kernel:", "Fullstack Developer Intern")
+    content += add_line("IDE:", "VSCode, Android Studio")
+    add_gap()
+    content += add_line("Languages.Programming:", "Python, JS, TS, Kotlin, Java, PHP, C#")
+    content += add_line("Languages.Computer:", "SQL, HTML, CSS")
+    content += add_line("Languages.Real:", "English, Indonesian")
+    add_gap()
+    content += add_line("Hobbies.Tech:", "Cybersecurity, PC Building, Keyboards")
+    content += add_line("Hobbies.Personal:", "Boxing, Movies, Learning")
+    add_gap()
+    content += add_header("- Contact")
+    content += add_line("Email:", "jeremy.yosep@gmail.com")
+    content += add_line("LinkedIn:", "linkedin.com/in/jeremyjosephpohar")
+    content += add_line("Instagram:", "@jeremyjpohar")
+    add_gap()
+    content += add_header("- GitHub Stats")
+    
+    content += add_line("Repos:", format_number(values["repos"]))
+    content += add_line("Stars:", format_number(values["stars"]))
+    content += add_line("Commits:", format_number(values["commits"]))
+    content += add_line("Followers:", format_number(values["followers"]))
+    content += add_line("Lines of Code:", f"{format_number(values['loc'])} ( {format_number(values['loc_added'])}++, {format_number(values['loc_deleted'])}-- )")
+    
+    svg += content
+    svg += "</svg>"
+    
+    with open(f"{mode}_mode.svg", "w") as f:
+        f.write(svg)
 
 
 def main():
@@ -198,13 +284,8 @@ def main():
         "loc_deleted": loc_deleted,
     }
 
-    # Note: only {{ repos }}, {{ stars }}, {{ commits }}, {{ followers }},
-    # {{ loc }}, {{ loc_added }}, {{ loc_deleted }} exist as placeholders
-    # in the templates now — personal fields (OS, Uptime, Contact, etc.)
-    # are plain hardcoded text you edit directly in the *_template.svg
-    # files, since GitHub's API has no concept of those.
-    stamp_svg("light_mode_template.svg", "light_mode.svg", values)
-    stamp_svg("dark_mode_template.svg", "dark_mode.svg", values)
+    generate_svg("light", values)
+    generate_svg("dark", values)
 
     print("Updated SVGs with:", values)
 
