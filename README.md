@@ -2,9 +2,9 @@
 
 <a href="https://github.com/CaffeinatedR4t">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/CaffeinatedR4t/CaffeinatedR4t/master/dark_mode.svg?v=2">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/CaffeinatedR4t/CaffeinatedR4t/master/light_mode.svg?v=2">
-    <img alt="CaffeinatedR4t's GitHub Card" src="https://raw.githubusercontent.com/CaffeinatedR4t/CaffeinatedR4t/master/dark_mode.svg?v=2">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/CaffeinatedR4t/CaffeinatedR4t/master/dark_mode.svg?v=3">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/CaffeinatedR4t/CaffeinatedR4t/master/light_mode.svg?v=3">
+    <img alt="CaffeinatedR4t's GitHub Card" src="https://raw.githubusercontent.com/CaffeinatedR4t/CaffeinatedR4t/master/dark_mode.svg?v=3">
   </picture>
 </a>
 
