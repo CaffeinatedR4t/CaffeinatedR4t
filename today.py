@@ -281,7 +281,7 @@ def generate_svg(mode, values):
 
     content = ""
     content += add_header("jeremy@pohar")
-    content += add_line("OS:", "Windows 10")
+    content += add_line("OS:", "Windows 10, Android 16, Ubuntu")
     content += add_line("Uptime:", get_uptime())
     content += add_line("Host:", "Creativeans")
     content += add_line("Kernel:", "Fullstack Developer Intern")

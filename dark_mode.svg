@@ -30,8 +30,8 @@
 <text x="520" y="40" class="header">jeremy@pohar</text>
 <line x1="625.3" y1="36" x2="1130" y2="36" stroke="#474d55" stroke-width="1" stroke-dasharray="4, 4"/>
 <text x="520" y="62" class="label">. OS:</text>
-<line x1="568.6" y1="58" x2="1040.9" y2="58" stroke="#474d55" stroke-width="2" stroke-dasharray="2, 6"/>
-<text x="1130" y="62" class="value" text-anchor="end">Windows 10</text>
+<line x1="568.6" y1="58" x2="878.9" y2="58" stroke="#474d55" stroke-width="2" stroke-dasharray="2, 6"/>
+<text x="1130" y="62" class="value" text-anchor="end">Windows 10, Android 16, Ubuntu</text>
 <text x="520" y="84" class="label">. Uptime:</text>
 <line x1="601.0" y1="80" x2="903.2" y2="80" stroke="#474d55" stroke-width="2" stroke-dasharray="2, 6"/>
 <text x="1130" y="84" class="value" text-anchor="end">20 years, 6 months, 24 days</text>
@@ -80,7 +80,7 @@
 <text x="1130" y="414" class="value" text-anchor="end">0</text>
 <text x="520" y="436" class="label">. Commits:</text>
 <line x1="609.1" y1="432" x2="1097.6" y2="432" stroke="#474d55" stroke-width="2" stroke-dasharray="2, 6"/>
-<text x="1130" y="436" class="value" text-anchor="end">445</text>
+<text x="1130" y="436" class="value" text-anchor="end">446</text>
 <text x="520" y="458" class="label">. Followers:</text>
 <line x1="625.3" y1="454" x2="1113.8" y2="454" stroke="#474d55" stroke-width="2" stroke-dasharray="2, 6"/>
 <text x="1130" y="458" class="value" text-anchor="end">2</text>
