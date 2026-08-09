@@ -157,6 +157,29 @@ def format_number(n):
     return f"{n:,}"
 
 
+def get_uptime():
+    from datetime import datetime
+    import calendar
+    birth_date = datetime(2006, 1, 16)
+    today = datetime.now()
+    
+    years = today.year - birth_date.year
+    months = today.month - birth_date.month
+    days = today.day - birth_date.day
+    
+    if days < 0:
+        months -= 1
+        prev_month = today.month - 1 if today.month > 1 else 12
+        prev_month_year = today.year if today.month > 1 else today.year - 1
+        _, num_days = calendar.monthrange(prev_month_year, prev_month)
+        days += num_days
+        
+    if months < 0:
+        years -= 1
+        months += 12
+        
+    return f"{years} years, {months} months, {days} days"
+
 def generate_svg(mode, values):
     dark_bg = "#161b22"
     dark_avatar = "#bec5ce"
@@ -236,7 +259,8 @@ def generate_svg(mode, values):
     content = ""
     content += add_header("jeremy@pohar")
     content += add_line("OS:", "Windows 10")
-    content += add_line("Uptime:", "4+ Years")
+    content += add_line("Uptime:", get_uptime())
+
     content += add_line("Host:", "Creativeans")
     content += add_line("Kernel:", "Fullstack Developer Intern")
     content += add_line("IDE:", "VSCode, Android Studio")

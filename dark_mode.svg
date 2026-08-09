@@ -59,8 +59,8 @@
 <line x1="568.6" y1="58" x2="1040.9" y2="58" stroke="#474d55" stroke-width="2" stroke-dasharray="2, 6"/>
 <text x="1130" y="62" class="value" text-anchor="end">Windows 10</text>
 <text x="520" y="84" class="label">. Uptime:</text>
-<line x1="601.0" y1="80" x2="1057.1" y2="80" stroke="#474d55" stroke-width="2" stroke-dasharray="2, 6"/>
-<text x="1130" y="84" class="value" text-anchor="end">4+ Years</text>
+<line x1="601.0" y1="80" x2="903.2" y2="80" stroke="#474d55" stroke-width="2" stroke-dasharray="2, 6"/>
+<text x="1130" y="84" class="value" text-anchor="end">20 years, 6 months, 24 days</text>
 <text x="520" y="106" class="label">. Host:</text>
 <line x1="584.8" y1="102" x2="1032.8" y2="102" stroke="#474d55" stroke-width="2" stroke-dasharray="2, 6"/>
 <text x="1130" y="106" class="value" text-anchor="end">Creativeans</text>
@@ -106,7 +106,7 @@
 <text x="1130" y="446" class="value" text-anchor="end">0</text>
 <text x="520" y="468" class="label">. Commits:</text>
 <line x1="609.1" y1="464" x2="1097.6" y2="464" stroke="#474d55" stroke-width="2" stroke-dasharray="2, 6"/>
-<text x="1130" y="468" class="value" text-anchor="end">439</text>
+<text x="1130" y="468" class="value" text-anchor="end">440</text>
 <text x="520" y="490" class="label">. Followers:</text>
 <line x1="625.3" y1="486" x2="1113.8" y2="486" stroke="#474d55" stroke-width="2" stroke-dasharray="2, 6"/>
 <text x="1130" y="490" class="value" text-anchor="end">2</text>
