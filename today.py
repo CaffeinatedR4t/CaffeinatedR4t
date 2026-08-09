@@ -203,7 +203,7 @@ def generate_svg(mode, values):
     dots_color = dark_dots if mode == 'dark' else light_dots
     
     width = 1160
-    height = 578
+    height = 510
     
     svg = f'''<svg width="{width}" height="{height}" viewBox="0 0 {width} {height}" xmlns="http://www.w3.org/2000/svg">
 <style>

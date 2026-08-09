@@ -1,11 +1,11 @@
-<svg width="1160" height="578" viewBox="0 0 1160 578" xmlns="http://www.w3.org/2000/svg">
+<svg width="1160" height="510" viewBox="0 0 1160 510" xmlns="http://www.w3.org/2000/svg">
 <style>
 .avatar { font-family: "Courier New", monospace; font-size: 14px; fill: #bec5ce; white-space: pre; }
 .header { font-family: "Consolas", "Courier New", monospace; font-size: 14px; font-weight: 700; fill: #bec5ce; }
 .label { font-family: "Consolas", "Courier New", monospace; font-size: 14px; fill: #ffa657; }
 .value { font-family: "Consolas", "Courier New", monospace; font-size: 14px; fill: #a5d6ff; }
 </style>
-<rect x="0.5" y="0.5" rx="10" width="1159" height="577" fill="#161b22" stroke="#474d55" stroke-width="1"/>
+<rect x="0.5" y="0.5" rx="10" width="1159" height="509" fill="#161b22" stroke="#474d55" stroke-width="1"/>
 <text x="40" y="40.0" class="avatar" xml:space="preserve">@@@@GYYYYYYYYYYY5&amp;@@@@@@@@@@@@@@@@@@@@&amp;5YYYYYYYYYYYG@@@@</text>
 <text x="40" y="62.0" class="avatar" xml:space="preserve">@@@@!            B@@@@@@@@@@@@@@@@@@@@B            ~@@@@</text>
 <text x="40" y="84.0" class="avatar" xml:space="preserve">@@@@!            B@@@@@@@@@@@@@@@@@@@@B            ~@@@@</text>
@@ -80,7 +80,7 @@
 <text x="1130" y="414" class="value" text-anchor="end">0</text>
 <text x="520" y="436" class="label">. Commits:</text>
 <line x1="609.1" y1="432" x2="1097.6" y2="432" stroke="#474d55" stroke-width="2" stroke-dasharray="2, 6"/>
-<text x="1130" y="436" class="value" text-anchor="end">446</text>
+<text x="1130" y="436" class="value" text-anchor="end">447</text>
 <text x="520" y="458" class="label">. Followers:</text>
 <line x1="625.3" y1="454" x2="1113.8" y2="454" stroke="#474d55" stroke-width="2" stroke-dasharray="2, 6"/>
 <text x="1130" y="458" class="value" text-anchor="end">2</text>
