@@ -49,12 +49,12 @@ right_col_x = 520
 max_right_x = 1130
 
 # Colors for Dark Theme (Tokyo Night / Neofetch inspired)
-dark_bg = "#1a1b26"
-dark_avatar = "#c0caf5"
-dark_label = "#ff9e64"  # Orange
-dark_value = "#7dcfff"  # Light blue
-dark_header = "#c0caf5" # Light gray/blue
-dark_dots = "#565f89"
+dark_bg = "#161b22"
+dark_avatar = "#bec5ce"
+dark_label = "#ffa657"  # Orange
+dark_value = "#a5d6ff"  # Light blue
+dark_header = "#bec5ce" # Light gray/blue
+dark_dots = "#474d55"
 
 # Colors for Light Theme
 light_bg = "#f6f8fa"

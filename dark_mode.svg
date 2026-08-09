@@ -1,12 +1,12 @@
 <svg width="1160" height="578" viewBox="0 0 1160 578" xmlns="http://www.w3.org/2000/svg">
 <style>
-.avatar { font-family: "Courier New", monospace; font-size: 7.2px; fill: #c0caf5; white-space: pre; }
-.header { font-family: "Consolas", "Courier New", monospace; font-size: 14px; font-weight: 700; fill: #c0caf5; }
-.label { font-family: "Consolas", "Courier New", monospace; font-size: 14px; fill: #ff9e64; }
-.value { font-family: "Consolas", "Courier New", monospace; font-size: 14px; fill: #7dcfff; }
-.dots { font-family: "Consolas", "Courier New", monospace; font-size: 14px; fill: #565f89; }
+.avatar { font-family: "Courier New", monospace; font-size: 7.2px; fill: #bec5ce; white-space: pre; }
+.header { font-family: "Consolas", "Courier New", monospace; font-size: 14px; font-weight: 700; fill: #bec5ce; }
+.label { font-family: "Consolas", "Courier New", monospace; font-size: 14px; fill: #ffa657; }
+.value { font-family: "Consolas", "Courier New", monospace; font-size: 14px; fill: #a5d6ff; }
+.dots { font-family: "Consolas", "Courier New", monospace; font-size: 14px; fill: #474d55; }
 </style>
-<rect x="0.5" y="0.5" rx="10" width="1159" height="577" fill="#1a1b26" stroke="#565f89" stroke-width="1"/>
+<rect x="0.5" y="0.5" rx="10" width="1159" height="577" fill="#161b22" stroke="#474d55" stroke-width="1"/>
 <text x="20" y="20.0" class="avatar" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
 <text x="20" y="31.2" class="avatar" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
 <text x="20" y="42.4" class="avatar" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
@@ -54,7 +54,7 @@
 <text x="20" y="512.8" class="avatar" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
 <text x="20" y="524.0" class="avatar" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
 <text x="20" y="535.2" class="avatar" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
-<line x1="490" y1="20" x2="490" y2="558" stroke="#565f89" stroke-width="1" stroke-dasharray="4,4"/>
+<line x1="490" y1="20" x2="490" y2="558" stroke="#474d55" stroke-width="1" stroke-dasharray="4,4"/>
 <text x="520" y="40" class="header">jeremy@pohar --------------------------------------------------------</text>
 <text x="520" y="62" class="label">. OS:</text>
 <text x="562.0" y="62" class="dots"> ....................................................... </text>
@@ -105,7 +105,7 @@
 <text x="1130" y="446" class="value" text-anchor="end">0</text>
 <text x="520" y="468" class="label">. Commits:</text>
 <text x="604.0" y="468" class="dots"> ............................................... </text>
-<text x="1130" y="468" class="value" text-anchor="end">435</text>
+<text x="1130" y="468" class="value" text-anchor="end">438</text>
 <text x="520" y="490" class="label">. Followers:</text>
 <text x="620.8" y="490" class="dots"> ........................................... </text>
 <text x="1130" y="490" class="value" text-anchor="end">2</text>
