@@ -1,0 +1,98 @@
+<svg width="1160" height="578" viewBox="0 0 1160 578" xmlns="http://www.w3.org/2000/svg">
+<style>
+.avatar { font-family: "Courier New", monospace; font-size: 7.2px; fill: #2f6feb; white-space: pre; }
+.header { font-family: "Consolas", "Monaco", monospace; font-size: 14px; font-weight: 700; fill: #24292e; }
+.section { font-family: "Consolas", "Monaco", monospace; font-size: 14px; font-weight: 700; fill: #d0d7de; }
+.label { font-family: "Consolas", "Monaco", monospace; font-size: 14px; fill: #8250df; }
+.value { font-family: "Consolas", "Monaco", monospace; font-size: 14px; fill: #24292e; }
+</style>
+<rect x="0.5" y="0.5" rx="10" width="1159" height="577" fill="#ffffff" stroke="#e1e4e8" stroke-width="1"/>
+<text x="20" y="20.0" class="avatar" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
+<text x="20" y="31.2" class="avatar" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
+<text x="20" y="42.4" class="avatar" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
+<text x="20" y="53.6" class="avatar" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
+<text x="20" y="64.8" class="avatar" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
+<text x="20" y="76.0" class="avatar" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
+<text x="20" y="87.2" class="avatar" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
+<text x="20" y="98.4" class="avatar" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
+<text x="20" y="109.6" class="avatar" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
+<text x="20" y="120.8" class="avatar" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
+<text x="20" y="132.0" class="avatar" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
+<text x="20" y="143.2" class="avatar" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
+<text x="20" y="154.4" class="avatar" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@@@@@GYYYYYYYYYYY5&amp;@@@@@@@@@@@@@@@@@@@@&amp;5YYYYYYYYYYYG@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
+<text x="20" y="165.6" class="avatar" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@@@@@!            B@@@@@@@@@@@@@@@@@@@@B            ~@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
+<text x="20" y="176.8" class="avatar" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@@@@@!            B@@@@@@@@@@@@@@@@@@@@B            ~@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
+<text x="20" y="188.0" class="avatar" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@@@@@!      ?P555P&amp;@@@@@@@@@@@@@@@@@@@@@P555PJ      ~@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
+<text x="20" y="199.2" class="avatar" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@@@@@!      G@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@G      ~@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
+<text x="20" y="210.4" class="avatar" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@@@@@!      P@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@G      ~@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
+<text x="20" y="221.6" class="avatar" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@@@@@!      P@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@G      ~@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
+<text x="20" y="232.8" class="avatar" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@@@@@!      P@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@G      ~@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
+<text x="20" y="244.0" class="avatar" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@@@@@!      P@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@G      ~@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
+<text x="20" y="255.2" class="avatar" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@@@@@!      P@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@G      ~@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
+<text x="20" y="266.4" class="avatar" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@@@@@!      P@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@G      ~@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
+<text x="20" y="277.6" class="avatar" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@@@@@!      P@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@G      ~@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
+<text x="20" y="288.8" class="avatar" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@@@@@!      P@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@G      ~@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
+<text x="20" y="300.0" class="avatar" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@@@@@!      P@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@G      ~@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
+<text x="20" y="311.2" class="avatar" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@@@@@!      P@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@G      ~@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
+<text x="20" y="322.4" class="avatar" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@@@@@!      P@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@G      ~@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
+<text x="20" y="333.6" class="avatar" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@@@@@!      P@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@G      ~@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
+<text x="20" y="344.8" class="avatar" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@@@@@!      P@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@G      ~@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
+<text x="20" y="356.0" class="avatar" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@@@@@!      G@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@G      ~@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
+<text x="20" y="367.2" class="avatar" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@@@@@!      ?PPP5P&amp;@@@@@@@@@@@@@@@@@@@@&amp;P5PPPJ      ~@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
+<text x="20" y="378.4" class="avatar" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@@@@@!            G@@@@@@@@@@@@@@@@@@@@G            ~@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
+<text x="20" y="389.6" class="avatar" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@@@@@!            G@@@@@@@@@@@@@@@@@@@@G            ~@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
+<text x="20" y="400.8" class="avatar" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@@@@@GJJJJJJJJJJJY&amp;@@@@@@@@@@@@@@@@@@@@&amp;YJJJJJJJJJJJP@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
+<text x="20" y="412.0" class="avatar" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
+<text x="20" y="423.2" class="avatar" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
+<text x="20" y="434.4" class="avatar" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
+<text x="20" y="445.6" class="avatar" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
+<text x="20" y="456.8" class="avatar" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
+<text x="20" y="468.0" class="avatar" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
+<text x="20" y="479.2" class="avatar" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
+<text x="20" y="490.4" class="avatar" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
+<text x="20" y="501.6" class="avatar" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
+<text x="20" y="512.8" class="avatar" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
+<text x="20" y="524.0" class="avatar" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
+<text x="20" y="535.2" class="avatar" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
+<line x1="435" y1="20" x2="435" y2="558" stroke="#d0d7de" stroke-width="1"/>
+<text x="460" y="30" class="header">CaffeinatedR4t ──────────────────</text>
+<text x="470" y="52" class="label">OS:</text>
+<text x="720" y="52" class="value">Windows 10</text>
+<text x="470" y="74" class="label">Uptime:</text>
+<text x="720" y="74" class="value">4+ Years</text>
+<text x="470" y="96" class="label">Host:</text>
+<text x="720" y="96" class="value">Creativeans</text>
+<text x="470" y="118" class="label">Kernel:</text>
+<text x="720" y="118" class="value">Fullstack Developer Intern</text>
+<text x="470" y="140" class="label">IDE:</text>
+<text x="720" y="140" class="value">VSCode, Android Studio</text>
+<text x="470" y="184" class="label">Languages.Programming:</text>
+<text x="720" y="184" class="value">Python, JavaScript, TypeScript, Kotlin, Java, C, C#, PHP</text>
+<text x="470" y="206" class="label">Languages.Computer:</text>
+<text x="720" y="206" class="value">SQL, HTML, CSS</text>
+<text x="470" y="228" class="label">Languages.Real:</text>
+<text x="720" y="228" class="value">English, Indonesian</text>
+<text x="470" y="272" class="label">Hobbies.Tech:</text>
+<text x="720" y="272" class="value">Cybersecurity, PC Building, Keyboards</text>
+<text x="470" y="294" class="label">Hobbies.Personal:</text>
+<text x="720" y="294" class="value">Boxing, Movies, Learning</text>
+<text x="460" y="338" class="section">- Contact ─────────────────────────────────</text>
+<text x="470" y="360" class="label">Email:</text>
+<text x="720" y="360" class="value">jeremy.yosep@gmail.com</text>
+
+<text x="470" y="404" class="label">LinkedIn:</text>
+<text x="720" y="404" class="value">linkedin.com/in/jeremyjosephpohar</text>
+<text x="470" y="426" class="label">Instagram:</text>
+<text x="720" y="426" class="value">@jeremyjpohar</text>
+<text x="460" y="470" class="section">- GitHub Stats ──────────────────────────</text>
+<text x="470" y="492" class="label">Repos:</text>
+<text x="720" y="492" class="value">41</text>
+<text x="870" y="492" class="label">Stars:</text>
+<text x="960" y="492" class="value">0</text>
+<text x="470" y="514" class="label">Commits:</text>
+<text x="720" y="514" class="value">433</text>
+<text x="870" y="514" class="label">Followers:</text>
+<text x="960" y="514" class="value">2</text>
+<text x="470" y="536" class="label">Lines of Code:</text>
+<text x="720" y="536" class="value">0 ( 0++, 0-- )</text>
+</svg>
