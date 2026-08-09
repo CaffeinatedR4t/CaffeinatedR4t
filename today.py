@@ -241,7 +241,8 @@ def generate_svg(mode, values):
 
     y = 40
     for a_line in ascii_art:
-        svg += f'<text x="40" y="{y:.1f}" class="avatar" xml:space="preserve">{a_line}</text>\n'
+        trimmed_line = a_line[22:-22]
+        svg += f'<text x="40" y="{y:.1f}" class="avatar" xml:space="preserve">{trimmed_line}</text>\n'
         y += 22
 
     char_width = 8.1  # slightly wider than 7.7 to ensure it doesn't overlap text
