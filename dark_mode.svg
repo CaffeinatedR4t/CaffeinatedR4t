@@ -80,7 +80,7 @@
 <text x="1130" y="414" class="value" text-anchor="end">0</text>
 <text x="520" y="436" class="label">. Commits:</text>
 <line x1="609.1" y1="432" x2="1097.6" y2="432" stroke="#474d55" stroke-width="2" stroke-dasharray="2, 6"/>
-<text x="1130" y="436" class="value" text-anchor="end">572</text>
+<text x="1130" y="436" class="value" text-anchor="end">573</text>
 <text x="520" y="458" class="label">. Followers:</text>
 <line x1="625.3" y1="454" x2="1113.8" y2="454" stroke="#474d55" stroke-width="2" stroke-dasharray="2, 6"/>
 <text x="1130" y="458" class="value" text-anchor="end">3</text>
